@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+import Animation from '../layout/animation';
 import { palette, breakpoints } from '../theme';
 import { H3, H2 } from '../components/typography';
 import Button from '../components/button';
@@ -9,7 +10,7 @@ const Pictures = styled.div`
     background-color: ${palette.primary.main};
     grid-column: full-start / col-end 4;
     background-image: linear-gradient(
-    ${palette.primary.main + '80'}, ${palette.primary.main + '80'}
+        ${palette.primary.main + '80'}, ${palette.primary.main + '80'}
     ),
     url(../images/back.jpg);
     background-size: cover;
@@ -19,9 +20,9 @@ const Pictures = styled.div`
     grid-template-columns: repeat(6, 1fr);
     align-items: center;
 
-    @media only screen and (max-width: ${breakpoints.md}) {
-    grid-column: 1 / -1;
-    padding: 6rem;
+    @media only screen and (max-width: ${breakpoints.xl}) {
+        grid-column: 1 / -1;
+        padding: 6rem;
     }
 `;
 
@@ -63,8 +64,8 @@ const Content = styled.div`
     align-items: flex-start;
 
     @media only screen and (max-width: ${breakpoints.md}) {
-    grid-column: 1 / -1;
-    grid-row: 5 / 6;
+        grid-column: 1 / -1;
+        grid-row: 5 / 6;
     }
 `;
 
@@ -78,8 +79,7 @@ export default function Story() {
     return (
         <>
             <Pictures>
-                <CoupleImg src="images/story-1.jpeg" alt="Couple with new house" />
-                <HouseImg src="images/story-2.jpeg" alt="New house" />
+                <Animation />
             </Pictures>
             <Content>
                 <H3 mb={0}>Happy Customers</H3>

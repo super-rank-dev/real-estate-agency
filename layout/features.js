@@ -38,7 +38,7 @@ function Feature({ title, description, iconName }) {
 // FEATURES
 const Wrapper = styled.section`
     grid-column: center-start / center-end;
-    margin: 85rem 0 15rem;
+    margin: 15rem 0;
 
     display: grid;
     gap: 6rem;

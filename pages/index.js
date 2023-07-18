@@ -17,7 +17,7 @@ export default function Home() {
             <Sidebar />
             <Header />
             <Realtors />
-            <Animation />
+            {/* <Animation /> */}
             <Features />
             <Story />
             <Homes />
